@@ -25,6 +25,8 @@ massive(process.env.CONNECTION_STRING).then(database => {
 
 app.get('/api/cats', controller.getCats);
 app.post('/api/cats/', controller.addCat);
+app.put('/api/cats/:id', controller.updateCat);
+app.delete('/api/cats/:id', controller.deleteCat);
 
 const PORT = 3333;
 app.listen(PORT, () => {
