@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 
-class Home extends Component {
+class AdminEdit extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
     }
     render() { 
-        return ( <div>Home</div> );
+        return ( 
+            <div>AdminEdit</div>
+         );
     }
 }
  
-export default Home;
+export default AdminEdit;
